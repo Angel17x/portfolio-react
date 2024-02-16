@@ -8,7 +8,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <aside id="separator-sidebar" className="sticky top-0 left-0 z-40  h-screen transition-transform -translate-x-full sm:translate-x-0 shadow-xl" aria-label="Sidebar">
+      <aside id="separator-sidebar" className="fixed md:sticky lg:sticky xl:sticky top-0 left-0 z-40  h-screen transition-transform -translate-x-full sm:translate-x-0 shadow-xl" aria-label="Sidebar">
         <div className="h-full px-3 py-4 overflow-y-auto bg-light-primary-500 dark:bg-dark-primary flex flex-col justify-between">
             <ul className="space-y-2 font-medium">
               {headers.map((item:ItemSidebar, i:number) => {

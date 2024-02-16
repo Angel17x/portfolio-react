@@ -18,8 +18,8 @@ export const HomeComponent: React.FC = () => {
   }
 
   return (
-    <div className="h-screen w-full bg-light-primary-500 dark:bg-dark-primary-600 flex justify-center items-center flex-col">
-      <div className="w-1/3">
+    <div className="min-h-screen w-full bg-light-primary-500 dark:bg-dark-primary-600 flex justify-center items-center flex-col">
+      <div className="w-full sm:w-3/4 md:w-3/4 lg:w-2/4 xl:w-2/4 p-7 md:p-0 lg:p-0 xl:p-0">
       <div className="flex justify-start items-start">
         <svg
           xmlns="http://www.w3.org/2000/svg"
