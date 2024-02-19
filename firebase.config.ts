@@ -5,15 +5,16 @@ import { getAnalytics } from 'firebase/analytics';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCqOhXQ4KHGPqqr2pLuwttjTM6xHgwjg4E",
-  authDomain: "portfolio-data-534dc.firebaseapp.com",
-  projectId: "portfolio-data-534dc",
-  storageBucket: "portfolio-data-534dc.appspot.com",
-  messagingSenderId: "1038293793629",
-  appId: "1:1038293793629:web:007ed3ed3ce13c209e86b4",
-  measurementId: "G-LDH7VH750D"
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
+  measurementId: import.meta.env.VITE_MEASUREMENT_ID
 };
 
 // Initialize Firebase

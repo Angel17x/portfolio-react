@@ -3,7 +3,7 @@ import { useTheme } from "../../hooks/theme";
 import { ItemSidebar, PathIconItem } from "../../types/item.sidebar.interface";
 import { footers, headers } from '../../utils/data.utils';
 
-const Sidebar = () => {
+export const SidebarComponent = () => {
   const { theme, toggleTheme } = useTheme();
   const footer = footers.find(x => x.name === theme);
 
@@ -67,5 +67,3 @@ const Sidebar = () => {
     </>
   );
 }
-
-export default Sidebar;
